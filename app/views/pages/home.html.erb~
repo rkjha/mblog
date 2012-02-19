@@ -1,0 +1,3 @@
+<h1>Mblog App</h1>
+<p>Hi, This the Home Page for the Mblog App</p>
+<%= link_to "Sign up Now!", "#", :class => "signup_button round" %>

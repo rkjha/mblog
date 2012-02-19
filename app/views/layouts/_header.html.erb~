@@ -1,0 +1,10 @@
+<header>
+		<%= image_tag("mblog_logo.png", :alt => "Mblog Logo", :class => "round") %>
+		<nav class="round">
+			<ul>
+				<li><%= link_to 'Home', root_path %></li>
+				<li><%= link_to 'Help', "#" %></li>
+				<li><%= link_to 'Sign In', '#' %></li>
+			</ul>
+		<nav>	
+</header>
