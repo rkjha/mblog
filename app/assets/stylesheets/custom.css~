@@ -19,6 +19,7 @@ section {
 	background: #fff;
 }
 
+
 section h1 {
 	font-size: 200%;
 }
@@ -101,4 +102,28 @@ footer{
 
 footer nav {
 	float: none;
+}
+
+/* users profile page */
+
+table.profile {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+td.main {
+    width: 70%;
+    padding: 1em;
+}
+
+td.sidebar {
+    width:30%;
+    padding: 1em;
+    vertical-align: top;
+    background: #ffc;
+}
+
+.profile img.gravtar {
+    border: 1px soid #999;
+    margin-bottom: -15px;
 }

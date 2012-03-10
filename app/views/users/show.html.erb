@@ -1,0 +1,13 @@
+<table class="profile" summary="profile inforrmation">
+	<tr>
+		<td class="main">
+			<h1>
+	     <%= gravatar_image_tag @user.email, :class => "gravatar" %>
+	     <%= @user.name %>
+      </h1>
+		</td>
+		<td class="sidebar round"></td>
+		<strong>Name</strong> <%= @user.name %> <br />
+		<strong>URL</strong> <%= link_to user_path(@user), @user %>
+	</tr>
+</table>
