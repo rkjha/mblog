@@ -41,6 +41,6 @@ class User < ActiveRecord::Base
 			secure_hash("#{Time.now.utc}--#{password}")
 		end
 		def secure_hash(string)
-			Digest::SHA2.hexidegest(string)
+			Digest::SHA2.hexdigest(string)
 		end
 end

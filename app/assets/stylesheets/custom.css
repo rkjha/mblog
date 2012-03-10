@@ -127,3 +127,8 @@ td.sidebar {
     border: 1px soid #999;
     margin-bottom: -15px;
 }
+
+/* Errors */
+#error_explanation{
+	background: #ff9654;
+}

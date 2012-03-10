@@ -117,7 +117,7 @@ td.main {
 }
 
 td.sidebar {
-    width:30%;
+    width:40%;
     padding: 1em;
     vertical-align: top;
     background: #ffc;
@@ -126,4 +126,9 @@ td.sidebar {
 .profile img.gravtar {
     border: 1px soid #999;
     margin-bottom: -15px;
+}
+
+/* Errors */
+#error_explanation{
+	background: #ff9654;
 }
