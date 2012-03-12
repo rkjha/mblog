@@ -1,4 +1,6 @@
 Mblog::Application.routes.draw do
+#  get "sessions/new"
+
   get "pages/home"
 
   get "pages/contact"
@@ -6,6 +8,13 @@ Mblog::Application.routes.draw do
   get "pages/about"
 
   get "pages/help"
+
+  # Sign In and Sign Out related Routes
+
+  match '/signin', :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy', via: :delete
+
+	resources :sessions, :only => [:new, :create, :destroy]
 
   resources :microposts
 
@@ -15,7 +24,7 @@ Mblog::Application.routes.draw do
   match '/about', :to => 'pages#about'
   match '/contact', :to => 'pages#contact'
   match '/help', :to => 'pages#help'
-  match '/signup', :to => 'users#new'
+  # match '/signup', :to => 'users#new'
 
   match '/', :to => 'pages#home'
 

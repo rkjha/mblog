@@ -117,7 +117,7 @@ td.main {
 }
 
 td.sidebar {
-    width:40%;
+    width:30%;
     padding: 1em;
     vertical-align: top;
     background: #ffc;

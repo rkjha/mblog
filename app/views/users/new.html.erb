@@ -12,13 +12,13 @@
 	</div>
 	<div class="field">
 		<%= f.label :password %> <br />
-		<%= f.text_field :password, :type => 'password' %>
+		<%= f.password_field :password %>
 	</div>
 	<div class="field">
 		<%= f.label :password_confirmation, "Confirmation" %> <br />
-		<%= f.text_field :password_confirmation, :type => 'password' %>
+		<%= f.password_field :password_confirmation %>
 	</div>
 	<div class="actions">
-		<%= f.submit "Sign up" %>
+		<%= f.submit "Create My Account" %>
 	</div>
 <% end %>

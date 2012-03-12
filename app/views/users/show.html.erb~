@@ -2,7 +2,6 @@
 	<tr>
 		<td class="main">
 			<h1>
-      <%= Time.now.year %>
       <%= gravatar_image_tag @user.email, :class => "gravatar" %>
 	     <%= @user.name %>
       </h1>
